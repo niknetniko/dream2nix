@@ -5,7 +5,7 @@
     name = "builder";
     src = ./.;
     format = "pyproject";
-    nativeBuildInputs = with pkgs.python310Packages; [poetry mypy flake8 black];
+    nativeBuildInputs = with pkgs.python310Packages; [poetry-core mypy flake8 black];
     doCheck = false;
   };
 }
